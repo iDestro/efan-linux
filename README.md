@@ -44,6 +44,20 @@ decrypted node list.
 - `gsettings` only if you want automatic GNOME proxy changes
 - No sudo, no TUN, no kernel modules
 
+## Build
+
+```bash
+git clone https://github.com/iDestro/efan-linux.git
+cd efan-linux
+make                 # produces ./efan
+```
+
+For a static build and local installation (binary, desktop launchers, shell
+wrapper), use `./setup.sh` instead; see [Install a launcher](#install-a-launcher).
+
+Prebuilt binaries, when available, are attached to
+[GitHub Releases](https://github.com/iDestro/efan-linux/releases).
+
 ## First run
 
 The RSA key is the same universal key embedded in the official Windows client.
