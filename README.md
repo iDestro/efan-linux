@@ -4,6 +4,8 @@
 
 A native Linux client for an existing **Efan VPN / 饿饭加速器** subscription.
 
+This is an unofficial community project, not affiliated with Efan.
+
 There is no official Linux build. This project talks to the same API as the
 official Windows client, decrypts the account's `x365://` node list with the
 RSA key embedded in `client.dll`, and runs a native X365 adapter. You get a
