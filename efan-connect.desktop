@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Efan Native Connect (Foreground)
+Comment=Run the Efan tunnel in the foreground; Ctrl-C stops it
+Exec=@EFAN_DESKTOP@ connect
+Terminal=true
+Icon=network-vpn
+Categories=Network;

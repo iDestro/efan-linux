@@ -1,0 +1,28 @@
+# Build output
+/efan
+/dist/
+/build/
+*.exe
+*.test
+*.out
+coverage.*
+
+# Local Efan runtime data and credentials (never commit these)
+session.json
+settings.json
+daemon.json
+config.yaml
+config.plain.yaml
+*.pem
+efan.log
+*.log
+.env
+.env.*
+
+# Editor and OS noise
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*~

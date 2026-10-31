@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Efan Native Stop
+Comment=Stop the Efan background tunnel and restore the GNOME proxy
+Exec=@EFAN_DESKTOP@ stop
+Terminal=true
+Icon=network-vpn
+Categories=Network;

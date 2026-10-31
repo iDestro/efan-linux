@@ -1,0 +1,13 @@
+# Example only. Do not use this node; it points to example.com.
+#
+# `efan fetch` writes the real config to ~/.config/efan/config.yaml after
+# login. That file contains your account UUID and must never be committed.
+#
+# The parser accepts either a normalized `proxies` map (shown here) or an
+# obfuscated `proxies_tmpl` plus `proxies_uuid` pair.
+listen: 127.0.0.1:10865
+log_path: log/app.log
+
+proxies:
+  Example:
+    - x365://00000000-0000-0000-0000-000000000000@example.com:443?path=/example&host=example.com&sni=example.com&pbk=AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=&sid=0123456789abcdef

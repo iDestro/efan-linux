@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Efan Native Start
+Comment=Start the Efan background tunnel and set the GNOME system proxy
+Exec=@EFAN_DESKTOP@ start
+Terminal=true
+Icon=network-vpn
+Categories=Network;

@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+# Small terminal wrapper used by the desktop launchers. It keeps the terminal
+# open after the command so errors and login prompts remain readable.
+
+efan="${EFAN_BIN:-$HOME/.local/bin/efan}"
+status=0
+
+case "${1:-}" in
+    login)
+        "$efan" login || status=$?
+        ;;
+    start)
+        "$efan" start --system-proxy || status=$?
+        ;;
+    stop)
+        "$efan" stop || status=$?
+        ;;
+    connect)
+        "$efan" connect --system-proxy || status=$?
+        ;;
+    *)
+        echo "usage: efan-desktop login|start|stop|connect" >&2
+        status=2
+        ;;
+esac
+
+printf '\nPress Enter to close...'
+read -r _
+exit "$status"

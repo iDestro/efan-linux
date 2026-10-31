@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Efan Native Login
+Comment=Log in to Efan and refresh the local node list
+Exec=@EFAN_DESKTOP@ login
+Terminal=true
+Icon=network-vpn
+Categories=Network;
